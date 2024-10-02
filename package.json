@@ -3,20 +3,30 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "lint": "eslint .",
-    "start": "react-native start",
-    "test": "jest"
+    "web": "react-scripts start",
+    "build:web": "react-scripts build",
+    "eject:web": "react-scripts eject"
   },
   "dependencies": {
+    "@react-native-picker/picker": "^2.8.1",
+    "axios": "^1.7.7",
     "react": "18.3.1",
-    "react-native": "0.75.4"
+    "react-dom": "^18.3.1",
+    "react-native": "0.75.4",
+    "react-native-tts": "^4.1.1",
+    "react-native-voice": "^0.3.0",
+    "react-native-web": "^0.19.12",
+    "react-refresh": "^0.14.2",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@react-native/babel-preset": "0.75.4",
     "@react-native/eslint-config": "0.75.4",
     "@react-native/metro-config": "0.75.4",
@@ -32,5 +42,17 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
