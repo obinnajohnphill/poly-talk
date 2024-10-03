@@ -1,80 +1,80 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# PolyTalk
 
-# Getting Started
+PolyTalk is a cross-platform React Native app designed for effortless real-time conversation translation. It uses speech recognition, Google Translate API, and text-to-speech capabilities to recognize, translate, and speak text across multiple languages. The app runs on Android, iOS, and web platforms.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **Speech Recognition**: Recognizes speech input in multiple languages.
+- **Real-time Translation**: Utilizes Google Translate API to translate text in real-time.
+- **Text-to-Speech**: Converts translated text back into speech.
+- **Cross-Platform Support**: Works on Android, iOS, and web browsers.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Installation
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Prerequisites
+
+Ensure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/) (>=14.x)
+- [React Native CLI](https://reactnative.dev/docs/environment-setup)
+- [Xcode](https://developer.apple.com/xcode/) (for iOS development on macOS)
+- [Android Studio](https://developer.android.com/studio) (for Android development)
+- [CocoaPods](https://cocoapods.org/) (for iOS dependency management)
+
+### Steps
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-repo/PolyTalk.git
+    cd PolyTalk
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    cd ios
+    pod install
+    cd ..
+    ```
+
+3. Run the app:
+
+   - For **iOS** (macOS only):
+     ```bash
+     npx react-native run-ios
+     ```
+
+   - For **Android**:
+     ```bash
+     npx react-native run-android
+     ```
+
+   - For **Web**:
+     ```bash
+     npm run web
+     ```
+
+## Environment Setup
+
+### Google API Key
+
+To use the Google Translate API, you need a Google Cloud project with the Translation API enabled.
+
+1. Create a Google Cloud project.
+2. Enable the Translation API.
+3. Generate an API key.
+4. Replace the placeholder `YOUR_GOOGLE_API_KEY` in the `App.js` file with your actual Google API key:
+
+    ```javascript
+    const API_KEY = "YOUR_GOOGLE_API_KEY";
+    ```
+
+### iOS Setup
+
+Make sure to install CocoaPods for iOS dependencies:
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-# poly-talk
+cd ios
+pod install
