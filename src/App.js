@@ -68,7 +68,7 @@ function App() {
   }, [selectedTargetLanguage]);
 
   const translateText = useCallback(async (text) => {
-    const API_KEY = "AIzaSyAPtn6LjCUFWKQWJgWok3LM1IerKInoYJo";
+    const API_KEY = "YOUR_GOOGLE_API_KEY";
     const sourceLangCode = getLanguageCode(selectedSourceLanguage);
     const targetLangCode = getLanguageCode(selectedTargetLanguage);
 
