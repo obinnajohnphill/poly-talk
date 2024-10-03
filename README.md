@@ -53,6 +53,11 @@ Ensure you have the following tools installed:
 
    - For **Web**:
      ```bash
+     
+      FAST_REFRESH=false npm run web
+     
+      or 
+     
      npm run web
      ```
 
